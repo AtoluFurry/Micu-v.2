@@ -12,6 +12,7 @@ Micu and any sentence to talk to AI
 >hug *ping* to hug somebody
 >boop *ping* to boop
 >lick *ping* to lick
+>fursuit to send random fursuit photo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -----------------------------------------------------------------
 https://discord.com/oauth2/authorize?client_id=785555016378875967&scope=bot&permissions=379968
