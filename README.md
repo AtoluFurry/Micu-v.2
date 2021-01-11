@@ -12,5 +12,6 @@ Micu and any sentence to talk to AI
 >boop to boop
 >lick to lick
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------------------------
 https://discord.com/oauth2/authorize?client_id=785555016378875967&scope=bot&permissions=379968
 
