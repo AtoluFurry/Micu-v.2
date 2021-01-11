@@ -11,6 +11,8 @@ const client = new Discord.Client({
 });
 client.util = require('./util');
 
+client.login(token);
+
 client.on('warn', err => console.warn('[WARNING]', err));
 
 client.on('error', err => console.error('[ERROR]', err));
@@ -19,7 +21,7 @@ client.on('ready', () => {
     console.log('Micu żyje');
     client.user.setActivity("being neko", {
         type: "STREAMING",
-        url: "https://www.twitch.tv/monstercat"
+        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     });
 });
 
@@ -49,7 +51,7 @@ client.on('message', async message => {
         const command = args.shift().toLowerCase();
         const hug = await fetch('https://api.furrycentr.al/sfw/hug/').then(Response => Response.json());
         if(hug){
-            console.log('API: ', hug.result.status)
+            console.log('hug API: ', hug.result.status)
             if (!message.mentions.users.first()) {
                 return message.channel.send(`${message.author} hugs nobody :<`);
             }
@@ -67,7 +69,7 @@ client.on('message', async message => {
         const command = args.shift().toLowerCase();
         const boop = await fetch('https://api.furrycentr.al/sfw/boop/').then(Response => Response.json());
         if(boop){
-            console.log('API: ', boop.result.status)
+            console.log('boop API: ', boop.result.status)
             if (!message.mentions.users.first()) {
                 return message.channel.send(`${message.author} boops nobody :<`);
             }
@@ -85,7 +87,7 @@ client.on('message', async message => {
         const command = args.shift().toLowerCase();
         const lick = await fetch('https://api.furrycentr.al/sfw/lick/').then(Response => Response.json());
         if(lick){
-            console.log('API: ', lick.result.status)
+            console.log('lick API: ', lick.result.status)
             if (!message.mentions.users.first()) {
                 return message.channel.send(`${message.author} licks nobody :<`);
             }
@@ -93,6 +95,16 @@ client.on('message', async message => {
                 message.channel.send(`${message.author} licks **${message.mentions.users.first().username}** *blep*`);
             message.channel.send(lick.result.imgUrl);
            }
+         }
+    }
+});
+
+client.on('message', async message => {
+    if (message.content.toLowerCase().startsWith(`${prefix}fursuit`)) {
+        const fursuit = await fetch('https://loremflickr.com/json/480/720/fursuit,furry').then(Response => Response.json());
+        if(fursuit){
+            console.log('fursuit API: ', fursuit.tags)
+            message.channel.send(fursuit.file);
          }
     }
 });
@@ -105,7 +117,7 @@ client.on('message', (msg) => {
                 color: 16711751,
                 title: "Help",
                 fields: [
-                  { name: "Commands", value: ">help to show this\nmicu and any sentence to talk to AI\n>hug to hug somebody\n>boop to boop\n>lick to lick"},
+                  { name: "Commands", value: ">help to show this\nmicu and any sentence to talk to AI\n>hug to hug somebody\n>boop to boop\n>lick to lick\n>fursuit to send random fursuit photo"},
                 ]
               }
             });
@@ -118,7 +130,5 @@ client.on('message', (msg) => {
 });
 
 process.on('unhandledRejection', (reason, promise) => {
-    console.log('[FATAL] Nieobsługiwany błąd na: Promise ', promise, ' Reason: ', reason.message);
+    console.log('[FATAL] Rejection on : Promise ', promise, ' Reason: ', reason.message);
 });
-
-client.login(token);
