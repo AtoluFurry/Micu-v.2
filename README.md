@@ -9,9 +9,9 @@ Configuration
 Commands:
 >help to show this in discord
 Micu and any sentence to talk to AI
->hug to hug somebody
->boop to boop
->lick to lick
+>hug *ping* to hug somebody
+>boop *ping* to boop
+>lick *ping* to lick
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -----------------------------------------------------------------
 https://discord.com/oauth2/authorize?client_id=785555016378875967&scope=bot&permissions=379968
