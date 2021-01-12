@@ -13,6 +13,8 @@ Micu and any sentence to talk to AI
 >boop *ping* to boop
 >lick *ping* to lick
 >fursuit to send random fursuit photo
+
+>latency to test your and bot ping
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -----------------------------------------------------------------
 https://discord.com/oauth2/authorize?client_id=785555016378875967&scope=bot&permissions=379968
