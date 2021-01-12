@@ -18,7 +18,7 @@ client.on('warn', err => console.warn('[WARNING]', err));
 client.on('error', err => console.error('[ERROR]', err));
 
 client.on('ready', () => {
-    console.log('Micu żyje');
+    console.log('Connected to APIs');
     client.user.setActivity("being neko", {
         type: "STREAMING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -35,6 +35,9 @@ client.on('uncaughtException', (err) => {
     process.exit(1)
 });
 
+process.on('unhandledRejection', (reason, promise) => {
+    console.log('[FATAL] Rejection on : Promise ', promise, ' Reason: ', reason.message);
+});
 
 client.on('message', (msg) => {
     if (msg.author.bot) return;
@@ -126,9 +129,20 @@ client.on('message', (msg) => {
 });
 
 client.on('message', (msg) => {
-    
-});
-
-process.on('unhandledRejection', (reason, promise) => {
-    console.log('[FATAL] Rejection on : Promise ', promise, ' Reason: ', reason.message);
+    if (msg.author.bot) return;
+    if (msg.guild) {
+        if (msg.content.toLowerCase().startsWith(`${prefix}latency`)) {
+            var ping = (new Date().getTime() - msg.createdTimestamp) * -1
+            var api = Math.round(client.ping)
+            msg.channel.send({embed: {
+                color: 16711751,
+                title: "Latency",
+                fields: [
+                  { name: "Local ping: ", value: '**' + ping + '** ms'},
+                  { name: "Bot ping: ", value: '**' + api + '** ms'}
+                ]
+              }
+            });
+        }
+    }
 });
