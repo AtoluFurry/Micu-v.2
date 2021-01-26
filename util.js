@@ -1,4 +1,5 @@
 const request = require('request-promise-native');
+const owo = require('owoify-js').default
 const {
     chat
 } = require('./misc/config.json');
@@ -30,7 +31,7 @@ const handleTalk = async (msg) => {
         let reply = await request(options);
         msg.channel.stopTyping(true);
         if (reply) {
-            await msg.channel.send(reply.cnt);
+            await msg.channel.send(owo(reply.cnt))
         }
     } catch (e) {
         msg.channel.stopTyping(true);

@@ -1,5 +1,5 @@
 {
-    "token": "token",
+    "token": "Nzg1NTU1MDE2Mzc4ODc1OTY3.X85jHg.zdKJRqgitct3tMTc_WZUE9vOY24",
     "prefix": ">",
     "status": {
         "type": "STREAMING",
@@ -7,8 +7,8 @@
     },
     "chat": {
         "url": "http://api.brainshop.ai/get",
-        "bid": "brain id",
-        "key": "api key",
-        "uid": "brain name"
+        "bid": "154503",
+        "key": "8ALFBJedOIdiyQiq",
+        "uid": "Micu"
     }
 }
