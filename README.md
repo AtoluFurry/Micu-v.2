@@ -8,9 +8,18 @@ Configuration
 Commands:
 >help to show this in discord
 Micu and any sentence to talk to AI
+<<<<<<< HEAD
 >hug to hug somebody
 >boop to boop
 >lick to lick
+=======
+>hug *ping* to hug somebody
+>boop *ping* to boop
+>lick *ping* to lick
+>fursuit to send random fursuit photo
+
+>latency to test your and bot ping
+>>>>>>> 32cba46a1ddb25e6db918f99f397729c822dfc84
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 https://discord.com/oauth2/authorize?client_id=785555016378875967&scope=bot&permissions=379968
 
