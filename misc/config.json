@@ -1,14 +1,14 @@
 {
-    "token": "Nzg1NTU1MDE2Mzc4ODc1OTY3.X85jHg.zdKJRqgitct3tMTc_WZUE9vOY24",
+    "token": " ",
     "prefix": ">",
     "status": {
         "type": "STREAMING",
          "url": "https://www.twitch.tv/monstercat"
     },
     "chat": {
-        "url": "http://api.brainshop.ai/get",
-        "bid": "154503",
-        "key": "8ALFBJedOIdiyQiq",
-        "uid": "Micu"
+        "url": " ",
+        "bid": " ",
+        "key": " ",
+        "uid": " "
     }
 }
