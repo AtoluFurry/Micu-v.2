@@ -8,11 +8,6 @@ Configuration
 Commands:
 >help to show this in discord
 Micu and any sentence to talk to AI
-<<<<<<< HEAD
->hug to hug somebody
->boop to boop
->lick to lick
-=======
 >hug *ping* to hug somebody
 >boop *ping* to boop
 >lick *ping* to lick
