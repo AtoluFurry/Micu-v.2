@@ -14,7 +14,6 @@ Micu and any sentence to talk to AI
 >fursuit to send random fursuit photo
 
 >latency to test your and bot ping
->>>>>>> 32cba46a1ddb25e6db918f99f397729c822dfc84
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 https://discord.com/oauth2/authorize?client_id=785555016378875967&scope=bot&permissions=379968
 
