@@ -53,11 +53,6 @@ client.on('message', (msg) => {
 });
 
 client.on('message', async message => {
-    if (message.content.toLowerCase().startsWith(`${prefix}owo`)) {
-        message.channel.send(owo('hello'))
-    }
-})
-client.on('message', async message => {
     if (message.content.toLowerCase().startsWith(`${prefix}hug`)) {
         const args = message.content.slice(prefix.length).trim().split(' ');
         const command = args.shift().toLowerCase();
